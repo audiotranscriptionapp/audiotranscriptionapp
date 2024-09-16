@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription App</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .upload-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .links {
+            text-align: center;
+        }
+        .dragover {
+            background-color: #e0e0e0;
+            border-color: #999;
+        }
+        .hidden-input {
+            display: none;
+        }
+        .transcription-output {
+            margin-top: 20px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <!-- Replace with your actual logo image -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_J_Q2o_3T_q-WspJJo1u71PGuGMtgF7ExCpV_xx2mZKzeGgdlF1PzEkNbkSkhcukJRwY&usqp=CAU" alt="Company Logo">
+        <h1>Audio Transcribe</h1>
+    </div>
+
+    <div class="upload-area" id="dropZone">
+        <p>DRAG AND DROP .MP3 OR .MP4 FILE HERE</p>
+        <input type="file" id="fileInput" accept=".mp3, .mp4" class="hidden-input">
+        <button onclick="document.getElementById('fileInput').click()">UPLOAD MP3 OR MP4 FILE</button>
+    </div>
+    
+    <div id="transcriptionOutput" class="transcription-output">
+        Transcription will appear here...
+    </div>
+
+    <div class="links">
+        <a href="#" id="helpLink">Help</a> |
+        <a href="#" id="websiteLink">Website</a> |
+        <a href="#" id="socialsLink">Socials</a>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

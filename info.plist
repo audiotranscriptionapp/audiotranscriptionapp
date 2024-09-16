@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>We need access to your microphone for audio transcription.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>We need access to your documents folder to save transcriptions.</string>
+    <key>NSDownloadsFolderUsageDescription</key>
+    <string>We need access to your downloads folder to save transcriptions.</string>
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>We need access to your desktop folder to save transcriptions.</string>
+    <key>NSMusicFolderUsageDescription</key>
+    <string>We need access to your music folder to save transcriptions.</string>
+    <key>NSMoviesFolderUsageDescription</key>
+    <string>We need access to your movies folder to save transcriptions.</string>
+    <key>NSRemovableVolumesUsageDescription</key>
+    <string>We need access to your external drives to save transcriptions.</string>
+</dict>
+</plist>
